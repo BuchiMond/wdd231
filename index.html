@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyCourses</title>
+    <meta name="description" content="All About My Courses." />
+    <meta name="author" content="Buchi Diamond Vitalis" />
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS (deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <!-- Brand (logo + site name) -->
+            <div class="brand">
+                <img src="images/logo.svg" alt="MyCourses logo" class="logo" />
+                <span class="site-title">MyCourses</span>
+            </div>
+
+            <!-- Hamburger for small screens -->
+            <button id="navToggle" class="hamburger" aria-expanded="false" aria-controls="mainNav"
+                aria-label="Open navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <!-- Navigation - aligned to the right on larger screens -->
+            <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="chamber.html">Chamber</a></li>
+                    <li><a href="final.html">Final</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- On small screens the nav remains visually below the header when opened,
+         but the source above keeps logo and nav logically together. -->
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Home</h1>
+
+        <section class="two-col">
+            <article class="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I’m Buchi Diamond Vitalis, a passionate and creative individual exploring the world of web
+                    development. I study various web technologies and design principles, continuously improving my
+                    skills through hands-on practice and real projects. <br><br>I enjoy building small but meaningful
+                    web
+                    applications that focus on functionality, user experience, and modern design. My goal is to grow
+                    into a professional web developer capable of creating responsive, visually appealing, and efficient
+                    websites that help businesses and individuals establish a strong online presence. <br><br>This short
+                    introduction gives a glimpse into my journey of learning, growth, and innovation in web development.
+                </p>
+            </article>
+
+            <aside class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student profile photo" class="profile-photo" />
+            </aside>
+        </section>
+
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters" role="tablist" aria-label="Course filters">
+                <button class="filter-btn" data-filter="all" aria-pressed="true">ALL</button>
+                <button class="filter-btn" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button class="filter-btn" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+
+            <div id="coursesList" class="courses-list" aria-live="polite"></div>
+
+            <p id="totalCredits" class="total-credits">The total credits for the listed courses above is ...</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <!-- 1. social SVG icons (no 'Connect' text) -->
+            <div class="footer-item social-item">
+                <a href="https://github.com/" target="_blank" rel="noopener">
+                    <img src="images/github.svg" alt="GitHub">
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+            <!-- 2. copyright dynamic -->
+            <div class="footer-item">
+                <p id="copyright"></p>
+            </div>
+
+            <!-- 3. last modified dynamic -->
+            <div class="footer-item">
+                <p id="lastModified">Last modified: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

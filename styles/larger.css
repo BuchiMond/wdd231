@@ -1,0 +1,94 @@
+/* larger.css - media queries and larger screen layouts */
+
+/* When viewport is at least 700px */
+@media (min-width: 700px) {
+
+    /* show nav horizontally and hide hamburger */
+    .main-nav {
+        display: block !important;
+        padding: 0;
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .main-nav a {
+        padding: .5rem .75rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* header-inner: brand left, nav right */
+    .header-inner {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Make the nav align to the right visually */
+    .main-nav {
+        margin-left: auto;
+    }
+
+    /* two-column layout: About column twice as wide as photo */
+    .two-col {
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    /* courses cards grid */
+    .courses-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        text-align: left;
+    }
+}
+
+/* On very wide screens show 3 columns for courses */
+@media (min-width: 1000px) {
+    .courses-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Hover effect for nav links (wayfinding) */
+.main-nav a:hover,
+.main-nav a:focus {
+    transform: translateY(-2px);
+    transition: transform .12s ease;
+}
+
+/* ensure h2 stays centered across sizes */
+.about h2,
+.photo h2,
+.certificates h2 {
+    text-align: center;
+}
+
+/* small visual polish on larger screens */
+@media (min-width: 700px) {
+    .course-card {
+        align-items: center;
+    }
+
+    .course-status {
+        min-width: 110px;
+        text-align: center;
+    }
+}

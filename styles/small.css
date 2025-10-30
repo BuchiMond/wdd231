@@ -1,0 +1,325 @@
+/* small.css - base styles for mobile and up (320px+) */
+
+:root {
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --primary: #2b6cb0;
+    --accent: #2b5894;
+    --muted: #6b7280;
+    --text: #111827;
+    font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.45;
+    text-align: center;
+    /* everything centred on mobile except nav (nav rules override) */
+}
+
+/* container */
+.container {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    background: white;
+    border-bottom: 1px solid #e6e9ef;
+    padding: 0.75rem 1rem;
+}
+
+/* header inner: brand, hamburger, nav (kept in one row) */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* brand: logo + site title */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+/* hamburger visible on small screens */
+.hamburger {
+    background: none;
+    border: none;
+    padding: .25rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* hamburger visuals */
+.hamburger-box {
+    width: 32px;
+    height: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 32px;
+    height: 3px;
+    background-color: var(--text);
+    position: absolute;
+    border-radius: 3px;
+}
+
+.hamburger-inner {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-inner::before {
+    content: "";
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    content: "";
+    top: 10px;
+}
+
+/* navigation: hidden by default on small screens. When opened it's left-aligned */
+.main-nav {
+    display: none;
+    padding: .5rem 1rem;
+    text-align: left;
+    /* nav stays left-aligned on mobile when opened */
+}
+
+/* nav list style */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li+li {
+    margin-top: 0.4rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+    padding: .45rem .6rem;
+    border-radius: 6px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.main-nav a.active {
+    background: rgba(43, 108, 176, 0.08);
+    color: var(--primary);
+}
+
+/* Page title */
+.page-title {
+    margin: 1.25rem 0;
+    font-size: 1.6rem;
+}
+
+/* Two column area on small screens stacks */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+/* About (bigger column) and photo (smaller) */
+.about {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(17, 24, 39, 0.06);
+    text-align: justify;
+    /* centred on mobile */
+}
+
+.photo {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(17, 24, 39, 0.06);
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* All h2 centred (requested) */
+.about h2,
+.photo h2,
+.certificates h2 {
+    background: var(--primary);
+    color: white;
+    padding: .35rem .6rem;
+    border-radius: 6px;
+    margin: 0 0 .75rem 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* certificates */
+.certificates {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    background: var(--card);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(17, 24, 39, 0.06);
+}
+
+/* Filters/buttons */
+.filters {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.filter-btn {
+    padding: .45rem .8rem;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.filter-btn[aria-pressed="true"] {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* course list */
+.courses-list {
+    display: grid;
+    gap: .75rem;
+}
+
+/* course card */
+.course-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: .75rem;
+    border: 1px solid #e6e9ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title {
+    font-weight: 500;
+    margin: 0;
+}
+
+.course-sub {
+    color: var(--muted);
+    font-size: .7rem;
+}
+
+.course-status {
+    padding: .35rem .6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .7rem;
+    border: 1px solid transparent;
+}
+
+.course-completed {
+    background: #eaefff;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* total credits */
+.total-credits {
+    margin-top: .8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* footer */
+.site-footer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--primary);
+    border-top: 1px solid #e6e9ef;
+    color: white;
+}
+
+.footer-grid {
+    display: grid;
+    gap: .75rem;
+    text-align: center;
+}
+
+.social-item a {
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px;
+}
+
+.social-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-item svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--text);
+}
+
+/* Small screens: prevent horizontal scroll */
+html,
+body {
+    overflow-x: hidden;
+}
