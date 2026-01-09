@@ -1,0 +1,81 @@
+{
+    "members": [
+        {
+            "name": "Lagos Tech Hub",
+            "address": "12 Marina Street, Lagos Island",
+            "phone": "+2348020000001",
+            "website": "https://lagostechhub.ng",
+            "image": "images/lagos-tech.jpg",
+            "membership": 3,
+            "category": "Technology",
+            "description": "Coworking space and startup accelerator supporting tech entrepreneurs.",
+            "established": 2018
+        },
+        {
+            "name": "Eko Foods Ltd",
+            "address": "45 Market Road, Ikeja",
+            "phone": "+2348020000002",
+            "website": "https://ekofoods.ng",
+            "image": "images/eko-foods.jpg",
+            "membership": 2,
+            "category": "Food & Beverage",
+            "description": "Local food manufacturer and distributor.",
+            "established": 2005
+        },
+        {
+            "name": "Palm Hotels",
+            "address": "3 Victoria Island Drive, Victoria Island",
+            "phone": "+2348020000003",
+            "website": "https://palmhotels.ng",
+            "image": "images/palm-hotels.jpg",
+            "membership": 3,
+            "category": "Hospitality",
+            "description": "Boutique hotel group focused on business travellers.",
+            "established": 1999
+        },
+        {
+            "name": "Ikeja Logistics",
+            "address": "8 Trade Park, Ikeja",
+            "phone": "+2348020000004",
+            "website": "https://ikejalogistics.ng",
+            "image": "images/ikeja-logistics.jpg",
+            "membership": 1,
+            "category": "Transport",
+            "description": "Freight and delivery solutions across Lagos.",
+            "established": 2012
+        },
+        {
+            "name": "Green Energy Co",
+            "address": "22 Renewable Ave, Lekki",
+            "phone": "+2348020000005",
+            "website": "https://greenenergy.ng",
+            "image": "images/green-energy.jpg",
+            "membership": 2,
+            "category": "Energy",
+            "description": "Solar installers and energy consultants.",
+            "established": 2016
+        },
+        {
+            "name": "Lagoon Legal",
+            "address": "10 Admiralty Way, Lekki",
+            "phone": "+2348020000006",
+            "website": "https://lagoonlegal.ng",
+            "image": "images/lagoon-legal.jpg",
+            "membership": 1,
+            "category": "Legal",
+            "description": "Corporate law firm advising SMEs.",
+            "established": 2008
+        },
+        {
+            "name": "Island Creative Studio",
+            "address": "4 Artisans Row, Yaba",
+            "phone": "+2348020000007",
+            "website": "https://islandcreative.ng",
+            "image": "images/island-creative.jpg",
+            "membership": 2,
+            "category": "Creative",
+            "description": "Design and branding agency for startups.",
+            "established": 2015
+        }
+    ]
+}

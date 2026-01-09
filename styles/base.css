@@ -1,0 +1,271 @@
+/* base.css */
+
+/* Prevent horizontal overflow across typical view range */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: "Rubik", "Roboto", "Segoe UI", "Helvetica", "Arial", sans-serif;
+}
+
+
+/* ensure external images scale and don't force horizontal scroll */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/**********************HEADER********************/
+header {
+    display: grid;
+    grid-template-columns: 64px auto 44px;
+    padding: 10px 16px;
+    column-gap: 20px;
+    border-bottom: solid 1px #ddd;
+    align-items: center;
+    background: #fff;
+}
+
+header img {
+    width: 64px;
+    height: 64px;
+    padding-bottom: 0;
+}
+
+header span {
+    font-size: 1.25rem;
+    color: #540a9e;
+    padding-left: 8px;
+    font-weight: 500;
+}
+
+/****************** HAMBURGER ********************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #540a9e;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.6rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.6rem;
+}
+
+/****************** NAVIGATION ********************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .7rem 10px;
+    color: #540a9e;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    outline: none;
+}
+
+/* wayfinding: focus and hover styles */
+.navigation a:hover,
+.navigation a:focus {
+    background-color: #540a9e;
+    color: #fff;
+}
+
+/* highlight the active nav item */
+.navigation li.active {
+    background-color: #eee;
+}
+
+/* Page title */
+h1 {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* Section headings shared style */
+h2 {
+    margin: 0 0 12px 0;
+    padding: 12px 16px;
+    background: #540a9e;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-radius: 6px;
+}
+
+/* layout helpers */
+.container {
+    padding: 16px;
+}
+
+/* Two-column wrapper: default to stacked on small screens */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+/* article and photo styles */
+.about {
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    /* placeholder */
+}
+
+.photo {
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Certificates section */
+.certificates {
+    margin-top: 22px;
+    background: transparent;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 12px;
+    border: 1px solid #540a9e;
+    background: #fff;
+    color: #540a9e;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.filter-btn[aria-pressed="true"] {
+    background: #540a9e;
+    color: #fff;
+}
+
+/* Course card basics */
+.courses-list {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.course-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.course-meta {
+    max-width: 75%;
+}
+
+.course-title {
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+
+.course-sub {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.course-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* completed style */
+.course-completed {
+    background: rgba(43, 95, 148, 0.14);
+    color: #540a9e;
+    border: 1px solid rgba(43, 95, 148, 0.2);
+}
+
+/* Total credits paragraph */
+.total-credits {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 30px;
+    padding: 14px 16px;
+    background: #540a9e;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-item a img {
+    width: 28px;
+    height: auto;
+    display: inline-block;
+}
+
+/* small-screen focus outline for accessibility */
+a:focus,
+button:focus {
+    outline: 3px solid rgba(84, 10, 158, 0.18);
+    outline-offset: 2px;
+}

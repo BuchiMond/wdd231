@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyCourses</title>
+    <meta name="description"
+        content="Brief information about me and about My courses. Whether completed or not completed. Whether CSE or WDD." />
+    <meta name="author" content="Buchi Diamond Vitalis" />
+
+    <!-- Open Graph (Facebook) Meta Tags -->
+    <meta property="og:title" content="MyCourses | Buchi Diamond Vitalis">
+    <meta property="og:description"
+        content="Explore my web development journey, completed and ongoing courses, and see how I’m building skills to create modern, responsive websites.">
+    <meta property="og:image" content="https://yourwebsite.com/images/profile.webp">
+    <meta property="og:url" content="https://yourwebsite.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MyCourses by Buchi Diamond Vitalis">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Google fonts: Roboto + Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,300;400;500;700;900;1,300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS (deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="site logo" height="64" width="64">
+        <span>BuchiVitalis</span>
+        <button id="han-btn" class="hamburger" aria-controls="nav-bar" aria-expanded="false" aria-label="Menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation" role="navigation" aria-label="Primary">
+        <ul>
+            <li class="active"><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Home</h1>
+
+        <section class="two-col" aria-label="Profile and Photo">
+            <article class="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I’m Buchi Diamond Vitalis, a passionate and creative individual exploring the world of web
+                    development. I study various web technologies and design principles, continuously improving my
+                    skills through hands-on practice and real projects. <br><br>I enjoy building small but meaningful
+                    web
+                    applications that focus on functionality, user experience, and modern design. My goal is to grow
+                    into a professional web developer capable of creating responsive, visually appealing, and efficient
+                    websites that help businesses and individuals establish a strong online presence. <br><br>This short
+                    introduction gives a glimpse into my journey of learning, growth, and innovation in web development.
+                </p>
+            </article>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student profile photo" class="profile-photo" />
+            </section>
+        </section>
+
+        <section class="certificates" aria-labelledby="cert-heading">
+            <h2 id="cert-heading">Web Certificate Courses</h2>
+
+            <div class="filters" role="tablist" aria-label="Course filters">
+                <button class="filter-btn" data-filter="all" aria-pressed="true">ALL</button>
+                <button class="filter-btn" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button class="filter-btn" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+
+            <div id="coursesList" class="courses-list" aria-live="polite"></div>
+
+            <p id="totalCredits" class="total-credits">The total credits for the listed courses above is ...</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-item social-item">
+                <a href="https://github.com/" target="_blank" rel="noopener">
+                    <img src="images/github.svg" alt="GitHub">
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="footer-item">
+                <p id="copyright"></p>
+            </div>
+
+            <div class="footer-item">
+                <p id="lastModified">Last modified: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

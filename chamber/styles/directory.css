@@ -1,0 +1,206 @@
+/* directory.css */
+
+/* Colour variables */
+:root {
+    --primary-color: #00D8C0;
+    --dark-color: #004848;
+    --light-bg: #f9f9f9;
+    --text-color: #222;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* General layout */
+body {
+    font-family: 'Rubik', 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-container img {
+    width: 48px;
+    height: 48px;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+}
+
+#hamburger {
+    font-size: 1.8rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    border-radius: var(--border-radius);
+}
+
+.nav-links li a {
+    display: block;
+    padding: 0.8rem;
+    color: white;
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* Show navigation when toggled */
+.nav-links.show {
+    display: flex;
+}
+
+/* Main area */
+main {
+    padding: 1rem;
+}
+
+/* View toggle buttons */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+}
+
+.view-toggle button.active,
+.view-toggle button:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* Member cards (grid view default) */
+#memberContainer.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-card h3 {
+    color: var(--dark-color);
+    margin: 0.5rem 0;
+}
+
+.member-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* List view */
+#memberContainer.list .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+#memberContainer.list .member-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-col {
+    margin-bottom: 1rem;
+}
+
+.footer-col h3 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons svg:hover {
+    fill: var(--primary-color);
+    transition: fill var(--transition-speed);
+}
