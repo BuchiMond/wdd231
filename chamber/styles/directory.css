@@ -204,3 +204,28 @@ footer {
     fill: var(--primary-color);
     transition: fill var(--transition-speed);
 }
+
+/* Reusable page header */
+.page-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.3rem;
+}
+
+.page-header p {
+    font-size: 0.95rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
