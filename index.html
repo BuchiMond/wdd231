@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MyCourses</title>
     <meta name="description"
-        content="Brief information about me and about My courses. Whether completed or not completed. Whether CSE or WDD." />
+        content="Buchi Diamond Vitalis — web development student profile, completed and in-progress CSE and WDD certificate courses, and skills overview." />
     <meta name="author" content="Buchi Diamond Vitalis" />
 
     <!-- Open Graph (Facebook) Meta Tags -->
     <meta property="og:title" content="MyCourses | Buchi Diamond Vitalis">
     <meta property="og:description"
-        content="Explore my web development journey, completed and ongoing courses, and see how I'm building skills to create modern, responsive websites.">
-    <meta property="og:image" content="https://yourwebsite.com/images/profile.webp">
-    <meta property="og:url" content="https://yourwebsite.com/index.html">
+        content="Explore my web development journey, completed and ongoing CSE and WDD courses, and see how I am building skills to create modern, responsive websites.">
+    <meta property="og:image" content="images/profile.webp">
+    <meta property="og:url" content="index.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MyCourses by Buchi Diamond Vitalis">
     <meta property="og:locale" content="en_US">
+
+    <meta name="theme-color" content="#540a9e">
 
     <!-- Google fonts: Roboto + Rubik -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="canonical" href="index.html">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -39,7 +43,8 @@
     <header>
         <img src="images/logo.svg" alt="site logo" height="64" width="64">
         <span>BuchiVitalis</span>
-        <button id="han-btn" class="hamburger" aria-controls="nav-bar" aria-expanded="false" aria-label="Menu"></button>
+        <button id="han-btn" type="button" class="hamburger" aria-controls="nav-bar" aria-expanded="false"
+            aria-label="Toggle navigation menu"></button>
     </header>
 
     <nav id="nav-bar" class="navigation" role="navigation" aria-label="Primary">
@@ -70,7 +75,8 @@
 
             <section class="photo">
                 <h2>Student Photo</h2>
-                <img src="images/profile.webp" alt="Student profile photo" class="profile-photo" />
+                <img src="images/profile.webp" alt="Student profile photo" class="profile-photo" width="250"
+                    height="250" loading="lazy" fetchpriority="low" />
             </section>
         </section>
 
@@ -78,9 +84,9 @@
             <h2 id="cert-heading">Web Certificate Courses</h2>
 
             <div class="filters" role="tablist" aria-label="Course filters">
-                <button class="filter-btn" data-filter="all" aria-pressed="true">ALL</button>
-                <button class="filter-btn" data-filter="CSE" aria-pressed="false">CSE</button>
-                <button class="filter-btn" data-filter="WDD" aria-pressed="false">WDD</button>
+                <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">ALL</button>
+                <button type="button" class="filter-btn" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button type="button" class="filter-btn" data-filter="WDD" aria-pressed="false">WDD</button>
             </div>
 
             <div id="coursesList" class="courses-list" aria-live="polite"></div>

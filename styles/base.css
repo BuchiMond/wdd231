@@ -211,7 +211,7 @@ h2 {
 .course-sub {
     margin: 0;
     font-size: 0.95rem;
-    color: #666;
+    color: #000000;
 }
 
 .course-status {
@@ -227,6 +227,13 @@ h2 {
     background: rgba(43, 95, 148, 0.14);
     color: #540a9e;
     border: 1px solid rgba(43, 95, 148, 0.2);
+}
+
+/* incomplete style */
+.course-incomplete {
+    background: #f3f3f3;
+    color: #333;
+    border: 1px solid #ccc;
 }
 
 /* Total credits paragraph */

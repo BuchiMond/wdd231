@@ -57,8 +57,9 @@ function renderCourses(list) {
         if (course.completed) {
             status.classList.add("course-completed");
             card.style.borderColor = "rgba(43, 95, 148, 0.14)";
-            // optional: slightly highlight completed card background
             card.style.background = "linear-gradient(180deg, rgba(230, 236, 255, 0.6), #ffffff)";
+        } else {
+            status.classList.add("course-incomplete");
         }
 
         card.appendChild(meta);
