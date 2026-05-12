@@ -12,7 +12,7 @@
 
 /* General layout */
 body {
-    font-family: 'Rubik', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     background-color: var(--light-bg);
     line-height: 1.6;
@@ -188,7 +188,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-.footer-col h3 {
+.footer-col h2 {
     color: var(--primary-color);
     font-size: 1rem;
     margin-bottom: 0.5rem;
@@ -216,7 +216,7 @@ footer {
 }
 
 .page-header h1 {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--dark-color);
