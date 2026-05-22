@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChamberMond | Lagos Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to ChamberMond — the Lagos Chamber of Commerce. Join, discover local businesses, and grow your network in Lagos, Nigeria." />
+    <meta name="author" content="Buchi Diamond Vitalis" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ChamberMond | Lagos Chamber of Commerce">
+    <meta property="og:description"
+        content="Empowering businesses across Lagos. Discover members, events, and join the chamber today.">
+    <meta property="og:image" content="https://buchimond.github.io/wdd231/chamber/images/profile.webp">
+    <meta property="og:url" content="https://buchimond.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ChamberMond by Buchi Diamond Vitalis">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/directory-large.css" media="screen and (min-width: 640px)">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- ─── Header ──────────────────────────────────────────────────────────── -->
+    <header>
+        <div class="logo-container">
+            <img src="images/chambermond.svg" alt="ChamberMond Logo" width="60" height="60">
+            <span>ChamberMond</span>
+        </div>
+
+        <nav>
+            <button id="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ─── Main ────────────────────────────────────────────────────────────── -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" aria-label="Welcome banner">
+            <img src="images/hero.png" alt="Lagos Chamber of Commerce hero image" class="hero-img">
+            <p class="hero-tagline">Lagos Chamber of Commerce</p>
+            <h1>Connecting Lagos<br>Business Community</h1>
+            <p>ChamberMond helps local businesses grow, connect, and thrive. Be part of the network that drives Lagos
+                forward.</p>
+            <a href="join.html" class="cta-btn">Join the Chamber Today →</a>
+        </section>
+
+        <!-- Home content grid: Weather | Events | Spotlights -->
+        <div class="home-grid">
+
+            <!-- Weather Section -->
+            <section id="weather-section" aria-label="Current weather in Lagos">
+                <h2 class="section-heading">Lagos Weather</h2>
+
+                <div class="weather-current">
+                    <div class="weather-icon-wrap">
+                        <img id="weather-icon" src="" alt="Weather icon">
+                    </div>
+                    <div class="weather-info">
+                        <h3 id="weather-town">Lagos</h3>
+                        <p class="weather-temp-big" id="weather-temp">—</p>
+                        <p class="weather-desc" id="weather-description">Loading…</p>
+                        <p class="weather-meta" id="weather-humidity"></p>
+                        <p class="weather-meta" id="weather-wind"></p>
+                    </div>
+                </div>
+
+                <h3 class="section-heading" style="font-size:1rem;">3-Day Forecast</h3>
+                <div id="forecast-container" aria-label="Three day forecast">
+                    <!-- Populated by home.js -->
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section id="events-section" aria-label="Upcoming events">
+                <h2 class="section-heading">Upcoming Events</h2>
+                <div class="event-list">
+
+                    <article class="event-card">
+                        <div class="event-date" aria-label="June 5">
+                            <span class="month">Jun</span>
+                            <span class="day">05</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Lagos Business Networking Night</h4>
+                            <p>Victoria Island, 6:00 PM – 9:00 PM<br>Connect with fellow entrepreneurs and chamber
+                                members.</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date" aria-label="June 14">
+                            <span class="month">Jun</span>
+                            <span class="day">14</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>SME Finance &amp; Growth Workshop</h4>
+                            <p>Ikeja Chamber House, 10:00 AM – 2:00 PM<br>Funding strategies and financial planning for
+                                SMEs.</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date" aria-label="June 28">
+                            <span class="month">Jun</span>
+                            <span class="day">28</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Annual Trade &amp; Commerce Expo</h4>
+                            <p>Eko Hotel Convention Centre, All Day<br>Showcase your business to hundreds of visitors
+                                and buyers.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Spotlights Section -->
+            <section id="spotlight-section" aria-label="Member spotlights">
+                <h2 class="section-heading">Member Spotlights</h2>
+                <div id="spotlight-container">
+                    <!-- Populated by home.js -->
+                </div>
+            </section>
+
+        </div><!-- end .home-grid -->
+
+    </main>
+
+    <!-- ─── Footer ──────────────────────────────────────────────────────────── -->
+    <footer>
+        <section class="footer-col contact">
+            <h2>Contact Us</h2>
+            <p>124 Marina Street, Lagos, Nigeria</p>
+            <p>Email: info@chambermond.org</p>
+            <p>Phone: +234 8012456789</p>
+        </section>
+
+        <section class="footer-col social">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00D8C0" viewBox="0 0 24 24">
+                        <path
+                            d="M22.675 0h-21.35C.595 0 0 .594 0 1.326v21.348C0 23.406.595 24 1.325 24h11.49v-9.294H9.691v-3.622h3.124V8.413c0-3.1 1.893-4.788 4.66-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.762v2.312h3.586l-.467 3.622h-3.119V24h6.116c.729 0 1.324-.594 1.324-1.326V1.326C24 .594 23.404 0 22.675 0z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00D8C0" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.427.403a4.92 4.92 0 0 1 1.78 1.153 4.922 4.922 0 0 1 1.153 1.78c.163.457.347 1.257.403 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 2.427a4.92 4.92 0 0 1-1.153 1.78 4.922 4.922 0 0 1-1.78 1.153c-.457.163-1.257.347-2.427.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.427-.403a4.92 4.92 0 0 1-1.78-1.153 4.922 4.922 0 0 1-1.153-1.78c-.163-.457-.347-1.257-.403-2.427C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.427a4.92 4.92 0 0 1 1.153-1.78A4.922 4.922 0 0 1 5.569 2.566c.457-.163 1.257-.347 2.427-.403C8.263 2.175 8.643 2.163 12 2.163zm0-2.163C8.736 0 8.332.012 7.052.07 5.775.128 4.828.326 4.063.597a6.92 6.92 0 0 0-2.5 1.63A6.92 6.92 0 0 0 .597 4.063C.326 4.828.128 5.775.07 7.052.012 8.332 0 8.736 0 12s.012 3.668.07 4.948c.058 1.277.256 2.224.527 2.989a6.92 6.92 0 0 0 1.63 2.5 6.92 6.92 0 0 0 2.5 1.63c.765.271 1.712.469 2.989.527C8.332 23.988 8.736 24 12 24s3.668-.012 4.948-.07c1.277-.058 2.224-.256 2.989-.527a6.92 6.92 0 0 0 2.5-1.63 6.92 6.92 0 0 0 1.63-2.5c.271-.765.469-1.712.527-2.989C23.988 15.668 24 15.264 24 12s-.012-3.668-.07-4.948c-.058-1.277-.256-2.224-.527-2.989a6.92 6.92 0 0 0-1.63-2.5A6.92 6.92 0 0 0 19.937.597c-.765-.271-1.712-.469-2.989-.527C15.668.012 15.264 0 12 0z" />
+                        <path
+                            d="M12 5.838A6.162 6.162 0 1 0 18.162 12 6.165 6.165 0 0 0 12 5.838zm0 10.162A3.999 3.999 0 1 1 16 12a4.004 4.004 0 0 1-4 4zM18.406 4.594a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="X (Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00D8C0" viewBox="0 0 24 24">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.59-2.46.69a4.26 4.26 0 0 0 1.88-2.35 8.36 8.36 0 0 1-2.69 1.03 4.22 4.22 0 0 0-7.3 3.85A12 12 0 0 1 3.15 4.6a4.23 4.23 0 0 0 1.31 5.63 4.2 4.2 0 0 1-1.91-.53v.05a4.22 4.22 0 0 0 3.38 4.13 4.24 4.24 0 0 1-1.9.07 4.22 4.22 0 0 0 3.94 2.93A8.48 8.48 0 0 1 2 19.54a11.92 11.92 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0 0 24 5.09a8.2 8.2 0 0 1-2.36.65 4.16 4.16 0 0 0 1.82-2.31z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer-col credits">
+            <p>&copy; <span id="currentYear"></span> ChamberMond</p>
+            <p>Designed by Buchi Diamond Vitalis</p>
+            <p>WDD231 Class Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

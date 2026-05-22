@@ -1,0 +1,406 @@
+/* home.css — ChamberMond Home Page Styles */
+
+/* ─── Hero ──────────────────────────────────────────────────────────────────── */
+.hero {
+    position: relative;
+    min-height: 340px;
+    background: linear-gradient(135deg, #004848 0%, #006B5F 55%, #00978A 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    overflow: hidden;
+    border-radius: 0 0 16px 16px;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.hero-tagline,
+.hero h1,
+.hero p,
+.cta-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(92, 200, 188, 0.15) 0%, transparent 55%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.hero-tagline {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #5CC8BC;
+    margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 540px;
+    margin: 0 auto 1.75rem;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #5CC8BC;
+    color: #004848;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+    background: #ffffff;
+    color: #004848;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ─── Home grid layout ───────────────────────────────────────────────────────── */
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ─── Section headings ───────────────────────────────────────────────────────── */
+.section-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark-color, #004848);
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid var(--accent-bg, #5CC8BC);
+    display: inline-block;
+}
+
+/* ─── Weather card ───────────────────────────────────────────────────────────── */
+#weather-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.25rem;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.weather-icon-wrap img {
+    width: 72px;
+    height: 72px;
+}
+
+.weather-info h3 {
+    margin: 0;
+    color: var(--dark-color, #004848);
+    font-size: 1.1rem;
+}
+
+.weather-temp-big {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #006B5F;
+    line-height: 1;
+}
+
+.weather-desc {
+    color: #555;
+    margin: 0.25rem 0;
+    text-transform: capitalize;
+}
+
+.weather-meta {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 0.15rem 0;
+}
+
+.weather-error {
+    color: #c0392b;
+    font-style: italic;
+}
+
+/* 3-day forecast strip */
+#forecast-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.forecast-card {
+    background: #f0faf9;
+    border: 1px solid #d0ece9;
+    border-radius: 10px;
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+}
+
+.forecast-card img {
+    width: 44px;
+    height: 44px;
+}
+
+.forecast-day {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #006B5F;
+    margin: 0 0 0.15rem;
+}
+
+.forecast-temp {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #004848;
+    margin: 0;
+}
+
+.forecast-desc {
+    font-size: 0.73rem;
+    color: #777;
+    margin: 0.1rem 0 0;
+}
+
+/* ─── Events ─────────────────────────────────────────────────────────────────── */
+#events-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.25rem;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0.75rem;
+    border-left: 4px solid var(--accent-bg, #5CC8BC);
+    background: #f9fffe;
+    border-radius: 0 8px 8px 0;
+}
+
+.event-date {
+    min-width: 52px;
+    text-align: center;
+    background: var(--dark-color, #004848);
+    color: white;
+    border-radius: 8px;
+    padding: 0.4rem 0.5rem;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.event-info h4 {
+    margin: 0 0 0.2rem;
+    color: var(--dark-color, #004848);
+    font-size: 0.95rem;
+}
+
+.event-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* ─── Spotlights ─────────────────────────────────────────────────────────────── */
+#spotlight-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.25rem;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    position: relative;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: white;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card.level-gold {
+    border-color: #DAA520;
+    background: linear-gradient(180deg, #fffbf0 0%, #ffffff 60%);
+}
+
+.spotlight-card.level-silver {
+    border-color: #aaa;
+    background: linear-gradient(180deg, #f8f8f8 0%, #ffffff 60%);
+}
+
+.spotlight-badge {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 50px;
+}
+
+.level-gold .spotlight-badge {
+    background: #DAA520;
+    color: white;
+}
+
+.level-silver .spotlight-badge {
+    background: #888;
+    color: white;
+}
+
+.spotlight-card img {
+    width: auto;
+    max-width: 100%;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card h3 {
+    font-size: 1rem;
+    color: var(--dark-color, #004848);
+    margin: 0 0 0.3rem;
+}
+
+.spotlight-category {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color, #006B5F);
+    margin: 0 0 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.spotlight-address,
+.spotlight-phone {
+    font-size: 0.82rem;
+    color: #666;
+    margin: 0.2rem 0;
+}
+
+.spotlight-link {
+    display: inline-block;
+    margin-top: 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-color, #006B5F);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.spotlight-link:hover {
+    border-color: var(--primary-color, #006B5F);
+}
+
+/* ─── Responsive: larger screens ─────────────────────────────────────────────── */
+@media screen and (min-width: 640px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-grid {
+        padding: 2rem;
+    }
+
+    /* Weather: icon + info side by side */
+    .weather-current {
+        flex-wrap: nowrap;
+    }
+
+    /* Spotlights: cards in a row */
+    #spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* Events: cards in a row */
+    .event-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .event-card {
+        flex: 1 1 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+}
