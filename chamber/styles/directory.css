@@ -81,7 +81,7 @@ nav {
 .nav-links li a:hover,
 .nav-links li a.active {
     background-color: var(--accent-bg);
-    color: var(--dark-color);
+    color: #003333;
     font-weight: 700;
 }
 
