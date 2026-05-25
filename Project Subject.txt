@@ -1,0 +1,6 @@
+Website Project Subject: Graphic Design
+I decided to do my website on graphic design. It's something I'm genuinely interested in and spend a good amount of time learning about on my own, so it made sense to build a project around it.
+
+The site will have three pages. The first will be a general introduction to graphic design, what it is, where it came from, and why it matters in everyday life. The second page will cover the basics like color theory, typography, and layout, along with some of the tools designers commonly use such as Figma and Adobe Illustrator. The third page will focus on resources and inspiration, things like design trends and references that are useful for anyone trying to learn or get better at design.
+
+I picked this topic because it's something I actually care about, which I think will make the project more enjoyable to work on and easier to put real effort into. I also think it gives me a good opportunity to make the site itself look well-designed, which feels fitting for the subject.
