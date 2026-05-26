@@ -30,9 +30,10 @@
 
     .nav-links li a:hover,
     .nav-links li a.active {
-        background-color: var(--primary-color);
-        color: var(--dark-color);
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
         border-radius: var(--border-radius);
+        border-bottom: 2px solid #5CC8BC;
     }
 
     /* Member container grid layout */
