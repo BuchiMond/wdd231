@@ -1,0 +1,524 @@
+/* join.css — ChamberMond Join Page Styles */
+
+/* ─── Page header ─────────────────────────────────────────────────────────── */
+.join-header {
+    background: linear-gradient(135deg, #004848 0%, #006B5F 60%, #00978A 100%);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1.5rem 2rem;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 2rem;
+}
+
+.join-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.join-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ─── Layout: form + membership cards ───────────────────────────────────── */
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+/* ─── Form container ─────────────────────────────────────────────────────── */
+.form-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+    padding: 2rem 1.5rem;
+}
+
+.form-container h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-color, #004848);
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid var(--accent-bg, #5CC8BC);
+    display: inline-block;
+}
+
+/* ─── Form fields ─────────────────────────────────────────────────────────── */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.join-form label span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #222;
+    background: #fafafa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    border-color: var(--primary-color, #006B5F);
+    box-shadow: 0 0 0 3px rgba(0, 107, 95, 0.12);
+    outline: none;
+    background: #fff;
+}
+
+.join-form input:invalid:not(:placeholder-shown) {
+    border-color: #c0392b;
+}
+
+.join-form select {
+    cursor: pointer;
+}
+
+.join-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button */
+.join-form .submit-btn {
+    margin-top: 0.5rem;
+    padding: 0.85rem 2rem;
+    background: var(--dark-color, #004848);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    align-self: flex-start;
+}
+
+.join-form .submit-btn:hover {
+    background: var(--primary-color, #006B5F);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.join-form .submit-btn:focus-visible {
+    outline: 3px solid var(--accent-bg, #5CC8BC);
+    outline-offset: 3px;
+}
+
+/* ─── Membership cards column ─────────────────────────────────────────────── */
+.membership-section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-color, #004848);
+    margin: 0 0 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid var(--accent-bg, #5CC8BC);
+    display: inline-block;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Card entrance animation */
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card {
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.membership-card.animate {
+    animation: cardSlideUp 0.6s ease forwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.1s; }
+.membership-card:nth-child(2) { animation-delay: 0.25s; }
+.membership-card:nth-child(3) { animation-delay: 0.4s; }
+.membership-card:nth-child(4) { animation-delay: 0.55s; }
+
+.membership-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.13);
+}
+
+/* NP card */
+.card-np {
+    background: linear-gradient(135deg, #eafffa 0%, #f5fffd 100%);
+    border: 2px solid #5CC8BC;
+}
+
+.card-np .card-icon { color: #00897b; }
+
+/* Bronze card */
+.card-bronze {
+    background: linear-gradient(135deg, #fff5ed 0%, #fffaf7 100%);
+    border: 2px solid #cd7f32;
+}
+
+.card-bronze .card-icon { color: #cd7f32; }
+
+/* Silver card */
+.card-silver {
+    background: linear-gradient(135deg, #f4f4f4 0%, #fafafa 100%);
+    border: 2px solid #999;
+}
+
+.card-silver .card-icon { color: #888; }
+
+/* Gold card */
+.card-gold {
+    background: linear-gradient(135deg, #fffbea 0%, #fffff8 100%);
+    border: 2px solid #DAA520;
+}
+
+.card-gold .card-icon { color: #DAA520; }
+
+.card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.membership-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-color, #004848);
+    margin: 0 0 0.25rem;
+}
+
+.card-fee {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0 0 0.75rem;
+}
+
+.card-info-btn {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.2s, color 0.2s;
+    background: var(--dark-color, #004848);
+    color: white;
+}
+
+.card-info-btn:hover {
+    background: var(--primary-color, #006B5F);
+}
+
+.card-np .card-info-btn { background: #00897b; }
+.card-np .card-info-btn:hover { background: #006B5F; }
+.card-bronze .card-info-btn { background: #a0522d; }
+.card-bronze .card-info-btn:hover { background: #7b3f1a; }
+.card-silver .card-info-btn { background: #666; }
+.card-silver .card-info-btn:hover { background: #444; }
+.card-gold .card-info-btn { background: #b8860b; }
+.card-gold .card-info-btn:hover { background: #8b6508; }
+
+/* ─── Modals ──────────────────────────────────────────────────────────────── */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+.modal-box {
+    background: white;
+    border-radius: 14px;
+    max-width: 480px;
+    width: 100%;
+    padding: 2rem 1.75rem 1.75rem;
+    position: relative;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.85rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    line-height: 1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+
+.modal-close:hover { color: #c0392b; }
+
+.modal-box h2 {
+    font-size: 1.3rem;
+    color: var(--dark-color, #004848);
+    margin: 0 0 0.3rem;
+}
+
+.modal-fee-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.2rem 0.7rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.modal-box ul {
+    padding-left: 1.2rem;
+    margin: 0 0 1.2rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.modal-box ul li { margin-bottom: 0.2rem; }
+
+.modal-join-btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--dark-color, #004848);
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.modal-join-btn:hover {
+    background: var(--primary-color, #006B5F);
+}
+
+/* NP modal */
+#modal-np .modal-fee-tag { background: #e0faf5; color: #00897b; }
+/* Bronze modal */
+#modal-bronze .modal-fee-tag { background: #fff0e0; color: #a0522d; }
+/* Silver modal */
+#modal-silver .modal-fee-tag { background: #f0f0f0; color: #555; }
+/* Gold modal */
+#modal-gold .modal-fee-tag { background: #fff8dd; color: #b8860b; }
+
+/* ─── Thank You page ──────────────────────────────────────────────────────── */
+.thankyou-wrap {
+    max-width: 680px;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+}
+
+.thankyou-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.1);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.thankyou-card .checkmark {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.thankyou-card h1 {
+    font-size: 1.9rem;
+    color: var(--dark-color, #004848);
+    margin: 0 0 0.5rem;
+}
+
+.thankyou-card > p {
+    color: #555;
+    max-width: 420px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.submission-summary {
+    background: #f0faf9;
+    border: 1.5px solid #b5e5df;
+    border-radius: 10px;
+    padding: 1.5rem 1.75rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.submission-summary h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-color, #004848);
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--accent-bg, #5CC8BC);
+    display: inline-block;
+}
+
+.summary-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.65rem;
+    font-size: 0.92rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.summary-label {
+    font-weight: 700;
+    color: #004848;
+    min-width: 130px;
+}
+
+.summary-value {
+    color: #333;
+}
+
+.thankyou-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.7rem 1.75rem;
+    background: var(--dark-color, #004848);
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--primary-color, #006B5F);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.7rem 1.75rem;
+    background: transparent;
+    color: var(--dark-color, #004848);
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border: 2px solid var(--dark-color, #004848);
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+    background: var(--dark-color, #004848);
+    color: white;
+}
+
+/* ─── Responsive: side-by-side on larger screens ────────────────────────── */
+@media screen and (min-width: 768px) {
+    .join-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0 2rem 3rem;
+    }
+
+    .form-container {
+        flex: 1 1 55%;
+    }
+
+    .membership-section {
+        flex: 1 1 40%;
+        position: sticky;
+        top: 1rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-header h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .membership-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.1rem;
+    }
+}
