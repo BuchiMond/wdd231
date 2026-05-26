@@ -2,7 +2,7 @@
 
 /* Colour variables */
 :root {
-    --primary-color: #006B5F;
+    --primary-color: #004d45; /* darkened from #006B5F for AAA on white (9.78:1) */
     --dark-color: #004848;
     --light-bg: #f9f9f9;
     --text-color: #222;
@@ -81,7 +81,7 @@ nav {
 .nav-links li a:hover,
 .nav-links li a.active {
     background-color: var(--accent-bg);
-    color: #003333;
+    color: #002222; /* darkened for AAA on #5CC8BC */
     font-weight: 700;
 }
 
@@ -159,7 +159,7 @@ main {
 
 .member-card p {
     font-size: 1rem;
-    color: #555;
+    color: #4a4a4a; /* was #555; #4a4a4a gives 8.86:1 on white — AAA */
 }
 
 .member-card a {
@@ -244,7 +244,7 @@ footer {
 
 .page-header p {
     font-size: 1rem;
-    color: #555;
+    color: #4a4a4a; /* was #555; AAA on white */
     max-width: 600px;
     margin: 0 auto;
 }

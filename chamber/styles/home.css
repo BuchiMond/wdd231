@@ -147,18 +147,18 @@
 .weather-temp-big {
     font-size: 2.4rem;
     font-weight: 700;
-    color: #006B5F;
+    color: #004d45; /* was #006B5F; AAA on white */
     line-height: 1;
 }
 
 .weather-desc {
-    color: #555;
+    color: #4a4a4a; /* was #555; AAA on white */
     margin: 0.25rem 0;
     text-transform: capitalize;
 }
 
 .weather-meta {
-    color: #888;
+    color: #4a4a4a; /* was #888; AAA on white */
     font-size: 0.85rem;
     margin: 0.15rem 0;
 }
@@ -191,7 +191,7 @@
 .forecast-day {
     font-size: 0.78rem;
     font-weight: 600;
-    color: #006B5F;
+    color: #004d45; /* was #006B5F; #004d45 gives 9.20:1 on #f0faf9 — AAA */
     margin: 0 0 0.15rem;
 }
 
@@ -204,7 +204,7 @@
 
 .forecast-desc {
     font-size: 0.73rem;
-    color: #777;
+    color: #474747; /* was #777; 8.82:1 on #f9f9f9 — AAA */
     margin: 0.1rem 0 0;
 }
 
@@ -264,7 +264,7 @@
 .event-info p {
     margin: 0;
     font-size: 0.85rem;
-    color: #666;
+    color: #4a4a4a; /* was #666; 8.86:1 on white — AAA */
 }
 
 /* ─── Spotlights ─────────────────────────────────────────────────────────────── */
@@ -319,12 +319,13 @@
 }
 
 .level-gold .spotlight-badge {
-    background: #DAA520;
-    color: white;
+    background: #fffbf0;
+    color: #5c3d00; /* dark gold text — 9.57:1 on #fffbf0 — AAA */
+    border: 1.5px solid #DAA520;
 }
 
 .level-silver .spotlight-badge {
-    background: #888;
+    background: #595959; /* was #888; white on #595959 = 7:1 — AAA */
     color: white;
 }
 
@@ -345,7 +346,7 @@
 .spotlight-category {
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--primary-color, #006B5F);
+    color: #004d45; /* was #006B5F; 9.78:1 on white — AAA */
     margin: 0 0 0.4rem;
     text-transform: uppercase;
     letter-spacing: 0.07em;
@@ -354,7 +355,7 @@
 .spotlight-address,
 .spotlight-phone {
     font-size: 0.82rem;
-    color: #666;
+    color: #4a4a4a; /* was #666; AAA on white */
     margin: 0.2rem 0;
 }
 
