@@ -186,7 +186,7 @@
     display: block;
     width: 100%;
     padding: 0.6rem 1rem;
-    background: #F5A623;
+    background: #004848;
     color: #fff;
     border: none;
     border-radius: 2px;
@@ -199,7 +199,7 @@
 }
 
 .learn-more-btn:hover {
-    background: #d4881a;
+    background: #003d3d;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════════
