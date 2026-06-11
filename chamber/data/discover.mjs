@@ -5,7 +5,7 @@ export const discoverItems = [
     "description": "Africa's longest canopy walkway at 401 metres, with monkeys, crocodiles, and bird watching.",
     "address": "Lekki-Epe Expressway, Lekki, Lagos",
     "cost": "₦1,000 – ₦2,000",
-    "photo": "https://www.spiralspin.com/lagos/images/scholarship/lekki-conservation-centre.jpg"
+    "photo": "images/lekki-conservation-centre.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ export const discoverItems = [
     "description": "A four-floor gallery housing over 8,000 works of Nigerian paintings, sculptures, and textiles.",
     "address": "8 Elegushi Road, Lekki Phase 1, Lagos",
     "cost": "Free entry",
-    "photo": "https://onecloudatatimecom.wordpress.com/wp-content/uploads/2019/04/nike-1.jpg"
+    "photo": "images/nike-1.webp"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@ export const discoverItems = [
     "description": "A calm, boat-access-only beach perfect for swimming, jet-skiing, and weekend relaxation.",
     "address": "Tarkwa Bay Island, Lagos Harbour",
     "cost": "₦500 – ₦1,500 (boat fare)",
-    "photo": "https://www.withinnigeria.com/piece/wp-content/uploads/sites/9/2024/12/Tarkwa-Bay-Beach.jpg"
+    "photo": "images/tarkwa-bay-beach.webp"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@ export const discoverItems = [
     "description": "A cultural hub for live theatre, art exhibitions, Yoruba heritage, and traditional cuisine.",
     "address": "1376 Tiamiyu Savage Street, Victoria Island, Lagos",
     "cost": "Free – ₦5,000 (events vary)",
-    "photo": "https://terrakulture.com/wp-content/uploads/2023/03/IMG-20230316-WA0016.jpg"
+    "photo": "images/terra.webp"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@ export const discoverItems = [
     "description": "Lagos' most vibrant open market — fabrics, fashion, electronics, and street food galore.",
     "address": "Balogun Street, Lagos Island, Lagos",
     "cost": "Free entry",
-    "photo": "https://www.shutterstock.com/image-photo/2-march-2019-lagos-nigeria-600nw-1327263413.jpg"
+    "photo": "images/balogun.webp"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@ export const discoverItems = [
     "description": "A former colonial prison turned live music venue, open park, and heritage art space.",
     "address": "1 Hospital Road, Lagos Island, Lagos",
     "cost": "Free – ₦3,000 (events vary)",
-    "photo": "https://nigeriawide.com/wp-content/uploads/2026/02/IMG_4860.jpeg"
+    "photo": "images/freedom-p.webp"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@ export const discoverItems = [
     "description": "A popular private beach for live music, swimming, drinks, and beach volleyball on weekends.",
     "address": "Ikate, Lekki, Lagos",
     "cost": "₦1,000 – ₦2,000 entry",
-    "photo": "https://images.pexels.com/photos/13998712/pexels-photo-13998712.jpeg"
+    "photo": "images/elegushi.webp"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@ export const discoverItems = [
     "description": "Explore Benin bronzes, Nok terracotta, and Nigeria's rich history through fascinating artefacts.",
     "address": "Onikan, Lagos Island, Lagos",
     "cost": "₦300 – ₦500",
-    "photo": "https://www.megastarmagazine.com/wp-content/uploads/2026/04/images-19-1.jpeg"
+    "photo": "images/national-museum-lagos.webp"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@ export const discoverItems = [
     "description": "A futuristic city built on reclaimed ocean land, with stunning skyline and waterfront views.",
     "address": "Victoria Island Extension, Lagos",
     "cost": "Free to visit",
-    "photo": "https://www.periwinklecondos.com/wp-content/uploads/2022/05/Eko-pics-2-1024x576.jpg"
+    "photo": "images/eko-atlantic.webp"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@ export const discoverItems = [
     "description": "Fela Kuti's legendary venue — live Afrobeat performances by Femi Kuti every weekend night.",
     "address": "1 Gbemisola Street, Ikeja, Lagos",
     "cost": "₦1,000 – ₦3,000",
-    "photo": "https://cdn.guardian.ng/wp-content/uploads/2018/10/Kalakuta.jpg"
+    "photo": "images/new-afrika-shrine.webp"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@ export const discoverItems = [
     "description": "A family amusement park with rides, water slides, a kids' zone, and bumper cars.",
     "address": "Km 17, Lekki-Epe Expressway, Lekki, Lagos",
     "cost": "₦2,000 – ₦5,000",
-    "photo": "https://images.timbu.com/contents-23185b93be5c400bb8ae31be020c28ec/9964348a-dda5-4544-8bb8-24f19ab1f4a0.png"
+    "photo": "images/dream-world-africana.webp"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@ export const discoverItems = [
     "description": "Scenic evening cruises across Lagos Harbour with drinks, music, and beautiful sunset views.",
     "address": "Bar Beach, Victoria Island, Lagos",
     "cost": "₦5,000 – ₦15,000",
-    "photo": "https://kamparitours.com/wp-content/uploads/2023/01/IMG_4285.jpg"
+    "photo": "images/lagos-boat-cruise.webp"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@ export const discoverItems = [
     "description": "A clean, well-organised private beach with water sports, volleyball, and outdoor dining options.",
     "address": "Water Corporation Drive, Oniru, Victoria Island, Lagos",
     "cost": "₦1,500 – ₦3,000 entry",
-    "photo": "https://images.nigeriapropertycentre.com/area-guides/ddb0bef3-b4e6-40e8-8c77-6030898becec.jpg"
+    "photo": "images/landmark-beach.webp"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@ export const discoverItems = [
     "description": "Lagos' first international mall — cinema, food court, fashion retail, and a fun arcade.",
     "address": "1 Bisway Street, Lekki Phase 1, Lagos",
     "cost": "Free entry",
-    "photo": "https://pub-c3c5765215d14e3d882d51123be2ba44.r2.dev/media/images/diary/2025-04-28%2014%3A08%3A39.725465%2B00%3A00/.jpg"
+    "photo": "images/the-palms-shopping-mall.webp"
   },
   {
     "id": 15,
@@ -117,6 +117,6 @@ export const discoverItems = [
     "description": "One of Lagos' oldest social clubs — tennis, swimming, squash, golf, and relaxed colonial ambience.",
     "address": "Glover Road, Ikoyi, Lagos",
     "cost": "₦5,000+ (guest pass)",
-    "photo": "https://pub-5bcc3edf34304d04b59dc91e1ad9d2fd.r2.dev/nigeria.tortoisepath.com/uploads/2024/04/13074031/Ikoyi-Club-1938-Ikoyi-Lagos-Lagos-Nigeria-TortoisePathcom-6-jpeg.webp"
+    "photo": "images/ikoyi-club-1938.webp"
   }
-]
+];

@@ -250,6 +250,7 @@
     /* Horizontal card layout */
     .discover-card {
         flex-direction: row;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
 
     .discover-card figure {
@@ -257,6 +258,21 @@
         min-width: 140px;
         height: auto;
         flex-shrink: 0;
+    }
+
+    /* Image zoom + brightness on hover — medium & large screens only */
+    .discover-card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card:hover {
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+        transform: translateY(-3px);
+    }
+
+    .discover-card:hover figure img {
+        transform: scale(1.08);
+        filter: brightness(1.08) saturate(1.15);
     }
 
     .card-body {
