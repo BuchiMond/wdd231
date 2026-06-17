@@ -1,0 +1,59 @@
+/* larger.css */
+
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 64px auto 44px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 12px;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 12px 8px;
+    }
+
+    /* Two-column layout: About is 2fr and Photo is 1fr */
+    .two-col {
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    /* certificates layout: show course cards in two columns on wider screens */
+    .courses-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+    }
+}
+
+/* Prevent horizontal scrolling up to 1200px wide */
+@media (max-width: 1200px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}

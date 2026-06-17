@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Plan – Graphic Design Studio</title>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Graphic Design Studio</h1>
+        <p>WDD 231 – Individual Project Site Plan</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#site-name">Site Name</a></li>
+            <li><a href="#site-purpose">Purpose</a></li>
+            <li><a href="#scenarios">Scenarios</a></li>
+            <li><a href="#color-scheme">Colors</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#wireframe">Wireframe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Graphic Design Studio</strong></p>
+            <p>
+                This name was chosen because it clearly communicates the core service — professional graphic design —
+                while "Studio" suggests a creative, collaborative workspace. It is easy to remember and applicable
+                across branding, print, and digital design work.
+            </p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>
+                Graphic Design Studio is an online portfolio and service hub for a freelance graphic designer. The site
+                showcases completed projects, describes available services (logo design, brand identity, social media
+                graphics, and layout design), and provides a way for prospective clients to get in touch or submit a
+                project brief.
+            </p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>Questions a typical site visitor might ask:</p>
+            <ul>
+                <li>I need a new logo — can I see examples of past branding work and request a quote?</li>
+                <li>What design services are available, and how long does a typical project take?</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>All colors meet <strong>WCAG 2.1 AAA</strong> contrast standards (7:1 minimum ratio).</p>
+
+            <div class="swatches">
+                <div class="swatch">
+                    <div class="swatch-box" style="background:#111111;"></div>
+                    <p><strong>Ink Black</strong> #111111</p>
+                    <p>Header background and main headings</p>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-box" style="background:#C0390B;"></div>
+                    <p><strong>Burnt Orange</strong> #C0390B</p>
+                    <p>Accent color — links and highlights</p>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-box" style="background:#1A1A1A;"></div>
+                    <p><strong>Charcoal</strong> #1A1A1A</p>
+                    <p>Body text</p>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-box" style="background:#F7F5F2; border:1px solid #ccc;"></div>
+                    <p><strong>Off-White</strong> #F7F5F2</p>
+                    <p>Page background</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>
+                The site uses a single typeface: <strong>Rubik</strong> (Google Fonts). Different weights create
+                hierarchy without needing multiple fonts.
+            </p>
+            <ul>
+                <li><strong>Rubik 700 (Bold)</strong> — headings and the site name</li>
+                <li><strong>Rubik 400 (Regular)</strong> — all body text and paragraphs</li>
+                <li><strong>Rubik 500 (Medium)</strong> — navigation links</li>
+            </ul>
+            <div class="type-examples">
+                <p class="ex-heading">Heading Example — Rubik Bold</p>
+                <p class="ex-body">Body text example — Rubik Regular. Clear, legible, and modern at any size.</p>
+                <p class="ex-nav">NAV LINK · RUBIK MEDIUM</p>
+            </div>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Structural layout of the home page for mobile and desktop viewports.</p>
+
+            <div class="wireframes">
+
+                <div class="wf-wrap">
+                    <p class="wf-label">Mobile (&lt; 480px)</p>
+                    <div class="wf-frame">
+                        <div class="wf-block tall">NAV</div>
+                        <div class="wf-block hero">HERO</div>
+                        <div class="wf-block">CARD</div>
+                        <div class="wf-block">CARD</div>
+                        <div class="wf-block">CARD</div>
+                        <div class="wf-block dark">FOOTER</div>
+                    </div>
+                </div>
+
+                <div class="wf-wrap">
+                    <p class="wf-label">Desktop (&gt; 768px)</p>
+                    <div class="wf-frame">
+                        <div class="wf-block tall wf-full">NAV</div>
+                        <div class="wf-row">
+                            <div class="wf-block hero wf-half">HERO TEXT</div>
+                            <div class="wf-block hero wf-half">HERO IMAGE</div>
+                        </div>
+                        <div class="wf-row">
+                            <div class="wf-block wf-third">CARD</div>
+                            <div class="wf-block wf-third">CARD</div>
+                            <div class="wf-block wf-third">CARD</div>
+                        </div>
+                        <div class="wf-block wf-full dark">FOOTER</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Graphic Design Studio &mdash; Site Plan &mdash; WDD 231</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — PixelCraft Studio</title>
+  <meta name="description"
+    content="Start your design project with PixelCraft Studio. Fill out the brief form and we'll respond within one business day with a quote and timeline." />
+  <meta name="author" content="PixelCraft Studio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — PixelCraft Studio" />
+  <meta property="og:description" content="Tell us about your project. We'll respond within one business day." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-contact.webp" />
+
+  <link rel="icon" type="image/webp" href="images/logo.webp" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ─────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.webp" alt="PixelCraft Studio logo" width="40" height="40" />
+        <span>PixelCraft Studio</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ── PAGE HEADER ──────────────────────── -->
+    <div class="contact-page-header">
+      <div class="page-wrap">
+        <span class="hero-eyebrow">Let's Work Together</span>
+        <h1>Start Your Project</h1>
+        <p>Fill in the brief below and we'll get back to you within one business day.</p>
+      </div>
+    </div>
+
+    <!-- ── CONTACT CONTENT ──────────────────── -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="contact-inner">
+
+        <!-- Form -->
+        <div>
+          <h2 id="contact-heading" class="sr-only">Project Brief Form</h2>
+          <div class="contact-form" role="form" aria-label="Project brief form">
+            <h2>Project Brief</h2>
+            <form action="thankyou.html" method="get" id="contact-form" novalidate>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="name">Full Name <span class="required" aria-label="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name"
+                    aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" required
+                    autocomplete="email" aria-required="true" />
+                </div>
+              </div>
+
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="project">Project Type</label>
+                  <select id="project" name="project">
+                    <option value="" disabled selected>Select a type…</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Brand Identity">Brand Identity Package</option>
+                    <option value="Print Design">Print Design</option>
+                    <option value="Social Media Kit">Social Media Kit</option>
+                    <option value="Pitch Deck">Pitch Deck</option>
+                    <option value="Packaging">Packaging Design</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Budget Range</label>
+                  <select id="budget" name="budget">
+                    <option value="" disabled selected>Select a range…</option>
+                    <option value="Under $200">Under $200</option>
+                    <option value="$200–$500">$200 – $500</option>
+                    <option value="$500–$1,000">$500 – $1,000</option>
+                    <option value="$1,000–$2,500">$1,000 – $2,500</option>
+                    <option value="$2,500+">$2,500+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="message">Project Brief</label>
+                  <textarea id="message" name="message"
+                    placeholder="Describe your project, goals, timeline, and any references or existing brand assets…"></textarea>
+                </div>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn-accent">Send Brief →</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Info Sidebar -->
+        <aside aria-label="Contact information">
+          <div class="contact-info">
+            <div class="info-card">
+              <h3>⏱ Response Time</h3>
+              <p>We respond to all project briefs within <strong>one business day</strong>. Rush inquiries are flagged
+                immediately.</p>
+            </div>
+
+            <div class="info-card">
+              <h3>📋 What to Prepare</h3>
+              <ul>
+                <li>A short description of your business or project</li>
+                <li>Any existing brand assets (logo, colors, fonts)</li>
+                <li>Examples of designs you like</li>
+                <li>Your deadline or target launch date</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <h3>💳 How Payment Works</h3>
+              <p>A 50% deposit is required to begin. The balance is due on delivery. We accept PayPal, bank transfer,
+                and major credit cards.</p>
+            </div>
+
+            <div class="info-card">
+              <h3>❓ Have Questions?</h3>
+              <p>Check our <a href="faq.html">FAQ page</a> for answers to common questions about process, revisions, and
+                file formats.</p>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="brand-name">PixelCraft Studio</p>
+        <p>Professional graphic design for brands that refuse to blend in. Bold ideas, clean execution.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Branding</a></li>
+          <li><a href="index.html#services">Print Design</a></li>
+          <li><a href="index.html#services">Digital Design</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> PixelCraft Studio. All rights reserved.</p>
+      <a href="https://drive.google.com/file/d/1yxKsINIXbCOxyjzsbuttVtRRQfUc0LcA/view?usp=sharing"
+        class="footer-video-link" target="_blank" rel="noopener noreferrer"
+        aria-label="Watch project walkthrough video (opens in new tab)">▶ Watch Project Video</a>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/contact-main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

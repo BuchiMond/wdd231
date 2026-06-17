@@ -1,0 +1,115 @@
+/* normalize.css */
+/* -----------------------------------------------------------
+   This file helps standardize default browser styling.
+   It ensures consistent rendering across browsers.
+----------------------------------------------------------- */
+
+
+/* 2. Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Rubik', 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* 4. Remove list styles */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 5. Make images and videos responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Remove link underlines and set default colour */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 7. Improve text rendering */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Reset tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 9. Smooth scroll behaviour */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 10. Reset button default styles */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 11. Ensure consistent heading weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+/* 12. Remove quotation marks in blockquotes */
+blockquote::before,
+blockquote::after {
+    content: '';
+}
+
+/* 13. Set consistent form element appearance */
+input,
+textarea,
+select {
+    border-radius: 0;
+    outline: none;
+}
+
+/* 14. Ensure iframe and embeds fit containers */
+iframe,
+embed {
+    max-width: 100%;
+    border: 0;
+}

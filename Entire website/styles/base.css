@@ -197,13 +197,6 @@ h2 {
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     background: #fff;
-    cursor: pointer;
-    transition: box-shadow 0.18s, transform 0.18s;
-}
-
-.course-card:hover {
-    box-shadow: 0 4px 16px rgba(84, 10, 158, 0.13);
-    transform: translateY(-2px);
 }
 
 .course-meta {
@@ -391,4 +384,15 @@ dialog #closeModal:hover {
 
 ::backdrop {
     background-color: rgb(0 0 0 / 50%);
+}
+
+/* Make course cards look clickable */
+.course-card {
+    cursor: pointer;
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 16px rgba(84, 10, 158, 0.13);
+    transform: translateY(-2px);
 }

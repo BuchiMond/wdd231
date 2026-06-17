@@ -1,0 +1,253 @@
+/* directory.css */
+
+/* Colour variables */
+:root {
+    --primary-color: #004d45; /* darkened from #006B5F for AAA on white (9.78:1) */
+    --dark-color: #004848;
+    --light-bg: #f9f9f9;
+    --text-color: #222;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+    --accent-bg: #5CC8BC;
+}
+
+/* General layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-container img {
+    width: 48px;
+    height: 48px;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    position: relative;
+}
+
+#hamburger {
+    font-size: 1.8rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    border-radius: var(--border-radius);
+}
+
+.nav-links li a {
+    display: block;
+    padding: 0.8rem;
+    color: white;
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-weight: 700;
+    border-left: 3px solid #5CC8BC;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Show navigation when toggled */
+.nav-links.show {
+    display: flex;
+}
+
+/* Main area */
+main {
+    padding: 1rem;
+}
+
+/* View toggle buttons */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+}
+
+.view-toggle button.active,
+.view-toggle button:hover {
+    background-color: var(--accent-bg);
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+/* Member cards (grid view default) */
+#memberContainer.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+}
+
+.member-card img {
+    width: auto;
+    max-width: 100%;
+    height: 100px;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.member-card h3 {
+    color: var(--dark-color);
+    margin: 0.5rem 0;
+}
+
+.member-card p {
+    font-size: 1rem;
+    color: #4a4a4a; /* was #555; #4a4a4a gives 8.86:1 on white — AAA */
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* List view */
+#memberContainer.list .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+#memberContainer.list .member-card img {
+    width: auto;
+    height: 80px;
+    max-width: 140px;
+    border-radius: 0;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-col {
+    margin-bottom: 1rem;
+}
+
+.footer-col h2 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons svg {
+    fill: white;
+    transition: fill var(--transition-speed);
+}
+
+.social-icons a:hover svg {
+    fill: var(--accent-bg);
+}
+
+/* Reusable page header */
+.page-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.3rem;
+}
+
+.page-header p {
+    font-size: 1rem;
+    color: #4a4a4a; /* was #555; AAA on white */
+    max-width: 600px;
+    margin: 0 auto;
+}

@@ -1,0 +1,64 @@
+/* directory-larger.css */
+
+@media screen and (min-width: 640px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Navigation: horizontal layout */
+    #hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+    }
+
+    .nav-links li a {
+        padding: 0.5rem 1rem;
+        border: none;
+        color: white;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+        border-radius: var(--border-radius);
+        border-bottom: 2px solid #5CC8BC;
+    }
+
+    /* Member container grid layout */
+    #memberContainer.grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Footer layout */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .footer-col {
+        flex: 1;
+        margin: 0 1rem;
+    }
+
+    .footer-col h2 {
+        font-size: 1.1rem;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
