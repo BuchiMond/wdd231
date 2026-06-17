@@ -13,9 +13,18 @@
   <meta property="og:title" content="Contact — PixelCraft Studio" />
   <meta property="og:description" content="Tell us about your project. We'll respond within one business day." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/og-contact.webp" />
+  <meta property="og:url" content="https://buchimond.github.io/wdd231/finalproject/contact.html" />
+  <meta property="og:image" content="https://buchimond.github.io/wdd231/finalproject/images/og-contact.webp" />
 
+  <link rel="icon" href="images/favicon.ico" />
   <link rel="icon" type="image/webp" href="images/logo.webp" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
@@ -60,7 +69,7 @@
 
         <!-- Form -->
         <div>
-          <h2 id="contact-heading" class="sr-only">Project Brief Form</h2>
+          <h2 id="contact-heading" class="pc-visually-hidden">Project Brief Form</h2>
           <div class="contact-form" role="form" aria-label="Project brief form">
             <h2>Project Brief</h2>
             <form action="thankyou.html" method="get" id="contact-form" novalidate>
@@ -113,7 +122,7 @@
               </div>
 
               <div class="form-submit">
-                <button type="submit" class="btn btn-accent">Send Brief →</button>
+                <button type="submit" class="pc-btn pc-btn-accent">Send Brief →</button>
               </div>
             </form>
           </div>
@@ -165,7 +174,7 @@
         <p>Professional graphic design for brands that refuse to blend in. Bold ideas, clean execution.</p>
       </div>
       <div class="footer-col">
-        <h4>Pages</h4>
+        <h2>Pages</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -173,7 +182,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h2>Services</h2>
         <ul>
           <li><a href="index.html#services">Branding</a></li>
           <li><a href="index.html#services">Print Design</a></li>
@@ -190,7 +199,7 @@
   </footer>
 
   <script type="module" src="scripts/contact-main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="scripts/year.js"></script>
 </body>
 
 </html>

@@ -14,9 +14,18 @@
   <meta property="og:description"
     content="Got questions? We've got answers. Learn about our process, pricing, turnaround times, and more." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/og-faq.webp" />
+  <meta property="og:url" content="https://buchimond.github.io/wdd231/finalproject/faq.html" />
+  <meta property="og:image" content="https://buchimond.github.io/wdd231/finalproject/images/og-faq.webp" />
 
+  <link rel="icon" href="images/favicon.ico" />
   <link rel="icon" type="image/webp" href="images/logo.webp" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
@@ -58,7 +67,7 @@
     <!-- ── FAQ ACCORDION ────────────────────── -->
     <section class="faq-section" aria-labelledby="faq-heading">
       <div class="faq-inner">
-        <h2 id="faq-heading" class="sr-only">FAQ List</h2>
+        <h2 id="faq-heading" class="pc-visually-hidden">FAQ List</h2>
         <div class="faq-list" id="faq-list">
 
           <!-- Process -->
@@ -187,7 +196,7 @@
     <section class="cta-banner" aria-labelledby="faq-cta-heading">
       <h2 id="faq-cta-heading">Still Have Questions?</h2>
       <p>Drop us a message and we'll get back to you within one business day.</p>
-      <a href="contact.html" class="btn">Contact Us</a>
+      <a href="contact.html" class="pc-btn">Contact Us</a>
     </section>
 
   </main>
@@ -200,7 +209,7 @@
         <p>Professional graphic design for brands that refuse to blend in. Bold ideas, clean execution.</p>
       </div>
       <div class="footer-col">
-        <h4>Pages</h4>
+        <h2>Pages</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -208,7 +217,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h2>Services</h2>
         <ul>
           <li><a href="index.html#services">Branding</a></li>
           <li><a href="index.html#services">Print Design</a></li>
@@ -225,7 +234,7 @@
   </footer>
 
   <script type="module" src="scripts/faq-main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="scripts/year.js"></script>
 </body>
 
 </html>

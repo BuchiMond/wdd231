@@ -13,9 +13,18 @@
   <meta property="og:title" content="Thank You — PixelCraft Studio" />
   <meta property="og:description" content="Your project brief has been received. We'll be in touch shortly." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/og-contact.webp" />
+  <meta property="og:url" content="https://buchimond.github.io/wdd231/finalproject/thankyou.html" />
+  <meta property="og:image" content="https://buchimond.github.io/wdd231/finalproject/images/og-contact.webp" />
 
+  <link rel="icon" href="images/favicon.ico" />
   <link rel="icon" type="image/webp" href="images/logo.webp" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
@@ -54,14 +63,13 @@
         <!-- Submission summary populated by JS -->
         <div class="submission-details" id="submission-details" aria-live="polite"></div>
 
-        <p id="no-data-msg" style="display:none; color: var(--color-muted); font-size:0.9rem; margin-bottom:1.5rem;">
+        <p id="no-data-msg" class="no-data-msg">
           No submission data found. Did you come here directly?
         </p>
 
-        <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
-          <a href="index.html" class="btn btn-primary">← Back to Home</a>
-          <a href="contact.html" class="btn btn-outline"
-            style="color:var(--color-accent); border-color:var(--color-accent);">Submit Another</a>
+        <div class="thankyou-actions">
+          <a href="index.html" class="pc-btn pc-btn-primary">← Back to Home</a>
+          <a href="contact.html" class="pc-btn pc-btn-outline pc-btn-outline-accent">Submit Another</a>
         </div>
       </div>
     </section>
@@ -75,7 +83,7 @@
         <p>Professional graphic design for brands that refuse to blend in. Bold ideas, clean execution.</p>
       </div>
       <div class="footer-col">
-        <h4>Pages</h4>
+        <h2>Pages</h2>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -83,7 +91,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h2>Services</h2>
         <ul>
           <li><a href="index.html#services">Branding</a></li>
           <li><a href="index.html#services">Print Design</a></li>
@@ -100,7 +108,7 @@
   </footer>
 
   <script type="module" src="scripts/thankyou.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="scripts/year.js"></script>
 </body>
 
 </html>

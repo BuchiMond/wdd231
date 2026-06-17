@@ -23,8 +23,8 @@ function displaySubmission() {
   const filled = fields.filter(f => params.get(f.key)?.trim());
 
   if (filled.length === 0) {
-    if (msgEl) msgEl.style.display = 'block';
-    box.style.display = 'none';
+    if (msgEl) msgEl.classList.add('is-visible');
+    box.classList.add('is-hidden');
     return;
   }
 
