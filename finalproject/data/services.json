@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "title": "Brand Identity Package",
+    "category": "Branding",
+    "price": "$1,200",
+    "turnaround": "10–14 days",
+    "description": "Complete visual identity system including logo, color palette, typography, and brand guidelines document.",
+    "icon": "🎨"
+  },
+  {
+    "id": 2,
+    "title": "Logo Design",
+    "category": "Branding",
+    "price": "$450",
+    "turnaround": "5–7 days",
+    "description": "Custom logo design with three initial concepts, two revision rounds, and final files in all formats (SVG, PNG, PDF).",
+    "icon": "✏️"
+  },
+  {
+    "id": 3,
+    "title": "Business Card Design",
+    "category": "Print",
+    "price": "$120",
+    "turnaround": "2–3 days",
+    "description": "Professional business card design (front and back), print-ready files at 300 dpi with bleed and crop marks.",
+    "icon": "🖨️"
+  },
+  {
+    "id": 4,
+    "title": "Social Media Kit",
+    "category": "Digital",
+    "price": "$380",
+    "turnaround": "5–7 days",
+    "description": "Cohesive set of 15 branded templates for Instagram, Facebook, and LinkedIn — editable in Canva or Figma.",
+    "icon": "📱"
+  },
+  {
+    "id": 5,
+    "title": "Brochure / Tri-Fold",
+    "category": "Print",
+    "price": "$280",
+    "turnaround": "4–6 days",
+    "description": "Eye-catching tri-fold brochure layout for services, events, or product promotions. Print-ready and digital versions included.",
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "title": "Flyer Design",
+    "category": "Print",
+    "price": "$95",
+    "turnaround": "1–2 days",
+    "description": "Bold single-page flyer for events, promotions, or announcements. Designed for both print and digital distribution.",
+    "icon": "🗒️"
+  },
+  {
+    "id": 7,
+    "title": "Poster Design",
+    "category": "Print",
+    "price": "$160",
+    "turnaround": "2–4 days",
+    "description": "Large-format poster design for retail, events, or campaigns. Supplied at full resolution for print or digital display.",
+    "icon": "🖼️"
+  },
+  {
+    "id": 8,
+    "title": "Email Newsletter Template",
+    "category": "Digital",
+    "price": "$220",
+    "turnaround": "3–5 days",
+    "description": "Responsive HTML email template designed in your brand colors, tested across major clients (Gmail, Outlook, Apple Mail).",
+    "icon": "📧"
+  },
+  {
+    "id": 9,
+    "title": "Infographic Design",
+    "category": "Digital",
+    "price": "$310",
+    "turnaround": "4–6 days",
+    "description": "Data-driven or process infographic that transforms complex information into clear, shareable visual content.",
+    "icon": "📊"
+  },
+  {
+    "id": 10,
+    "title": "Pitch Deck Design",
+    "category": "Digital",
+    "price": "$620",
+    "turnaround": "6–9 days",
+    "description": "Investor-ready presentation design (up to 20 slides) in PowerPoint or Google Slides, branded and polished.",
+    "icon": "💼"
+  },
+  {
+    "id": 11,
+    "title": "Product Label Design",
+    "category": "Print",
+    "price": "$190",
+    "turnaround": "3–5 days",
+    "description": "Custom product label layout for packaging, bottles, or boxes — print-ready with die-cut specifications.",
+    "icon": "🏷️"
+  },
+  {
+    "id": 12,
+    "title": "Website Banner Set",
+    "category": "Digital",
+    "price": "$145",
+    "turnaround": "2–3 days",
+    "description": "Set of six web banners in standard IAB sizes (leaderboard, rectangle, skyscraper) for advertising campaigns.",
+    "icon": "🖥️"
+  },
+  {
+    "id": 13,
+    "title": "Icon Set Design",
+    "category": "Digital",
+    "price": "$275",
+    "turnaround": "4–7 days",
+    "description": "Custom icon set of 10–20 icons in a unified style, delivered as SVG and PNG at multiple sizes.",
+    "icon": "🔷"
+  },
+  {
+    "id": 14,
+    "title": "Annual Report Layout",
+    "category": "Print",
+    "price": "$900",
+    "turnaround": "10–15 days",
+    "description": "Multi-page annual or impact report designed for print and digital PDF, including charts, photography placement, and typography.",
+    "icon": "📑"
+  },
+  {
+    "id": 15,
+    "title": "Packaging Design",
+    "category": "Branding",
+    "price": "$750",
+    "turnaround": "8–12 days",
+    "description": "Structural and graphic packaging design for boxes, bags, or sleeves — including 3D mockup renders for presentation.",
+    "icon": "📦"
+  },
+  {
+    "id": 16,
+    "title": "Menu Design",
+    "category": "Print",
+    "price": "$230",
+    "turnaround": "3–4 days",
+    "description": "Restaurant or café menu design with a focus on readability, hierarchy, and brand consistency. Supplied print-ready.",
+    "icon": "🍽️"
+  },
+  {
+    "id": 17,
+    "title": "Event Program / Booklet",
+    "category": "Print",
+    "price": "$360",
+    "turnaround": "5–8 days",
+    "description": "Multi-page event program or booklet layout — professionally typeset for conferences, weddings, or galas.",
+    "icon": "📋"
+  }
+]

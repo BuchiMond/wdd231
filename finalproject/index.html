@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelCraft Studio — Graphic Design That Makes You Stand Out</title>
+  <meta name="description"
+    content="PixelCraft Studio delivers bold, professional graphic design — branding, print, and digital — that helps businesses stand out and communicate with impact." />
+  <meta name="author" content="PixelCraft Studio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PixelCraft Studio — Graphic Design That Makes You Stand Out" />
+  <meta property="og:description"
+    content="Bold, professional graphic design for branding, print, and digital. Fast turnaround, real results." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-home.webp" />
+
+  <link rel="icon" type="image/webp" href="images/logo.webp" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ─────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.webp" alt="PixelCraft Studio logo" width="40" height="40" />
+        <span>PixelCraft Studio</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ── HERO ────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Graphic Design Studio</span>
+          <h1 id="hero-heading">We Design.<br /><em>You Stand Out.</em></h1>
+          <p>
+            From logos to full brand identities, from print to digital —
+            PixelCraft Studio creates sharp, purposeful design that helps
+            your business make a real impression.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Start a Project</a>
+            <a href="#services" class="btn btn-outline">Browse Services</a>
+          </div>
+        </div>
+
+        <div class="hero-image-panel" aria-hidden="true">
+          <div class="hero-placeholder">
+            <img src="images/hero.webp" alt="hero" width="40" height="40" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ─────────────────────────── -->
+    <section class="section services-section" id="services" aria-labelledby="services-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <span class="section-eyebrow">What We Do</span>
+          <h2 id="services-heading">Our Services</h2>
+          <p>Click any service to see full details, pricing, and turnaround time.</p>
+        </header>
+
+        <!-- Filter controls (populated by JS) -->
+        <div class="services-controls" id="filter-controls" role="group" aria-label="Filter services by category"></div>
+
+        <!-- Cards grid (populated by JS) -->
+        <div class="services-grid" id="services-grid" aria-live="polite" aria-label="Services list"></div>
+      </div>
+    </section>
+
+    <!-- ── WHY US ────────────────────────────── -->
+    <section class="section why-section" aria-labelledby="why-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <span class="section-eyebrow">Why PixelCraft</span>
+          <h2 id="why-heading" style="color:#fff;">Four Reasons to Work With Us</h2>
+        </header>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">⚡</div>
+            <h3>Fast Turnaround</h3>
+            <p>Most projects delivered in under two weeks. Rush options available on request.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🎯</div>
+            <h3>Strategy-First</h3>
+            <p>Every design decision is rooted in your goals — not just visual preference.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🔄</div>
+            <h3>Revision Rounds</h3>
+            <p>All packages include revision rounds so you get exactly what you envisioned.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">📁</div>
+            <h3>All File Formats</h3>
+            <p>Final files delivered in every format you need: print, web, and editable source.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ───────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to Make Your Brand Unforgettable?</h2>
+      <p>Tell us about your project — we'll respond within one business day.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+
+  </main>
+
+  <!-- ── MODAL ─────────────────────────────── -->
+  <div class="modal-overlay" id="service-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+    aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-title">Service Details</h2>
+        <button class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-icon" id="modal-icon" aria-hidden="true"></div>
+        <div class="modal-detail">
+          <span class="modal-detail-label">Category</span>
+          <span class="modal-detail-value" id="modal-category"></span>
+        </div>
+        <div class="modal-detail">
+          <span class="modal-detail-label">Price</span>
+          <span class="modal-detail-value" id="modal-price"></span>
+        </div>
+        <div class="modal-detail">
+          <span class="modal-detail-label">Turnaround</span>
+          <span class="modal-detail-value" id="modal-turnaround"></span>
+        </div>
+        <p class="modal-desc" id="modal-desc"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="contact.html" class="btn btn-accent" style="display:block;text-align:center;">Request This Service</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="brand-name">PixelCraft Studio</p>
+        <p>Professional graphic design for brands that refuse to blend in. Bold ideas, clean execution.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Branding</a></li>
+          <li><a href="index.html#services">Print Design</a></li>
+          <li><a href="index.html#services">Digital Design</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> PixelCraft Studio. All rights reserved.</p>
+      <a href="https://drive.google.com/file/d/1yxKsINIXbCOxyjzsbuttVtRRQfUc0LcA/view?usp=sharing"
+        class="footer-video-link" target="_blank" rel="noopener noreferrer"
+        aria-label="Watch project walkthrough video (opens in new tab)">▶ Watch Project Video</a>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
